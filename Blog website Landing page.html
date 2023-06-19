@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+    
 
     <title>Blog Website</title>
     
@@ -32,7 +30,7 @@
     margin: 0;
    
   min-height: 100vh;
-	background-image: url(https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80) no-repeat center cover;
+
 	background:rgb(23, 67, 104);
   scroll-behavior: smooth;
   backdrop-filter: brightness(75%);
@@ -55,10 +53,12 @@
   font-size: 2rem;
   font-weight: 500;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.75);
+  
 }
 a{
   
   text-decoration: none;
+  
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .header nav{
@@ -75,7 +75,7 @@ a{
 }
 .nav-link{
   text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.75);
-  color: white;
+  color: #ffffff;
 }
 .header ul li{
   list-style: none;
@@ -86,9 +86,12 @@ a{
   padding: 7px 5px;
   margin: 1.75%;
   margin-right: 1.75%;
+  font-weight: 400;
+  color: rgb(70, 47, 34);
   border: none;
+  cursor: pointer;
   border-radius: 5px 5px;
-  background: #e0d7a4;
+  background: #e2ca89;
   box-shadow: 5px 3px 2px 0px rgba(0, 0, 0, 0.75);
 }
 button{
@@ -107,20 +110,25 @@ button{
 .nav-link i{
   float: right;
 }
-
+.nav-list li, .dropdown li{
+  color: white;
+}
 .header .nav-list li:hover .dropdown{
   display: block;
   position: absolute;
   margin-top: 20%;
   padding-top: -10%;
   z-index: 1;
-  padding: 15px 0px;
+  padding: 15px 0px 3px;
   float: center;
   font-size: 1rem;
   text-align: left;
   width: 100%;
   min-height: 90%;
-  background: #ffbe0a;
+  color:rgb(255, 255, 255);
+  border-radius: 5px 5px;
+  background: #9ec1d8;
+  box-shadow: 5px 3px 2px 0px rgba(0, 0, 0, 0.75);
 }
 .dropdown li:hover .sub-menu{
   display: block;
@@ -128,24 +136,29 @@ button{
   font-size: 1rem;
   width: 100%;
   padding: 3px 0px;
+  border-radius: 5px 5px;
   z-index: 1;
   text-align: left;
   top: 15%;
   margin-left: 100%;
   float: right;
   min-height: 100%;
-  background: #daae36;
+  color: whitesmoke;
+  background: #8ac0e4;
+  box-shadow: 5px 3px 2px 0px rgba(0, 0, 0, 0.75);
 }
 
 .nav-item ul li:hover{
-  background: #ff1749;
+  background: #7c97ca;
   width: inherit;
+  font-size: 1rem;
   color: black;
   font-weight: 300;
 }
 .dropdown ul li:hover{
-  background: #ff1749;
+  background: #7698c0;
   color: black;
+  font-size: 1rem;
   width: inherit;
   font-weight: 200;
   font-size: 1rem;
@@ -166,38 +179,58 @@ button{
   .nav-list:hover{
     background: transparent;
   }
-  .hamb{
-    display: none;
-  }
+
 
 }
 .main-content{
   position: absolute;
-  padding: 7% 55% 0% 35%;
-  left: -25%;
+  padding: 20px;
+  justify-content: space-between;
+  display: flexbox;
+  flex-direction: column;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  left: 0%;
+  margin: 0;
   font-weight: 200;
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+
+  }
+
+.float-child{
+  width: 50%;
+  float: left;
+  padding: 50px;
+
+}
+.main-h1{
+  color: #693944;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.75);
+  padding: 20% 30% 0 0%;
 }
 
-.main-content p{
+.main-info p{
   margin: 3% 0%;
   font-size: 1rem;
-  
+  padding: 3% 10% 0 0%;
 }
 
 .main-btn{
   margin: 5% 0%;
-  background: #e9335a;
+  background: #e2ca89;
   width: 25%;
-  padding: 10px 5px;
+  color: rgb(73, 31, 31);
+  font-weight: 500;
+  padding: 10px 10px;
   height: 10%;
   border-radius: 5px 5px;
   cursor: pointer;
   box-shadow: 5px 3px 2px 0px rgba(0, 0, 0, 0.75);
 }
 .main-btn:hover{
-  transform: translateZ(20px);
- 
+  transform: translateY(7px);
 }
 .align-left {
     float: left;
@@ -228,28 +261,34 @@ button{
 }
   
 .section1{
-  padding: 0% 0%;
-  max-width: 900px;
-      margin: 40% auto;
+  padding: 55px;
+  max-width: 1000px;
+      margin: 60% auto;
       text-align: justify;
-      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-    transform: scale(0.98);
     transition: transform 0.5s;
 }
 .section1 h1{
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.75);
   text-align: center;
-  text-decoration: 3px solid rgba(250, 237, 237, 0.75) underline;
+  text-decoration: 3px solid rgb(207, 147, 139) underline;
+  color: #79585f;
   margin: 0 0 5% 0;
   padding: 0 0 0 0;
+  font-size: 40px;
 }
 
 .section1 p{
-  padding: 5px 20px;
+  padding: 5px 25px;
   margin: 0% 0% 5% 0%;
 }
+.section1 h3{
+  color: #925260;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+}
 .section1 h3:hover{
-  text-decoration: 3px solid rgba(250, 237, 237, 0.75) underline;
+  text-decoration: 3px solid rgba(207, 147, 139) underline;
+  
+  font-size: 24px;
   transition: all .5s ease-in-out;
   transform: translateX(7px) scale(0.95);
 }
@@ -259,9 +298,11 @@ button{
   padding: 0 30px 0 30px;
 }
 .section2 h1{
+  color: #79585f;
   text-align: center;
-  text-decoration: 3px solid rgba(250, 237, 237, 0.75) underline;
+  text-decoration: 3px solid rgba(207, 147, 139) underline;
   text-shadow:  2px 4px 4px rgba(0, 0, 0, 0.75);
+  font-size: 40px;
 }
 .section2 h1:hover{
   transform: translateY(7px);
@@ -282,7 +323,7 @@ button{
 }
 .card{
   background: #e2ca89;
-  border: 1px solid #0fa2f7;
+  border: none;
   padding: 8px;
   border-radius: 12px;
   box-shadow: 5px 7px 9px 3px rgba(0, 0, 0, 0.75);
@@ -316,12 +357,13 @@ button{
 .card-btn{
   padding: 8px 20px;
   border-radius: 50px;
+  background: #441c25;
   font-weight: 500;
-  color: goldenrod;
+  color: #e2ca89;
   margin: 5% auto;
   display: block;
   cursor: pointer;
-  box-shadow: 5px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 4px 3px 0px rgba(68, 67, 67, 0.75);
   
 }
 .card-btn:hover{
@@ -332,7 +374,7 @@ footer{
   display: flex;
   justify-content: flex-end;
   padding: 0 25px 15px 0;
-  background: #e9335a;
+  background: #724b52;
 }
 footer h5{
   text-align: center;
@@ -351,7 +393,7 @@ footer h5{
 }
 .icon{
   padding: 0 20px 0 0;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.75);
+  text-shadow: 5px 7px 5px rgba(0, 0, 0, 0.75);
 }
 .icon:hover{
   transition: all .5s ease;
@@ -364,13 +406,17 @@ footer h5{
   header{
     float: none;
     width: 100%;
+    font-size: 16px;
+    padding: 0 5px 0 5px;
   }
   html,body,.section1,.section2,.footer{
+    font-size: 14px;
     width: 100%;
+
   }
   .card{
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
   img{
     max-width: 100%;
@@ -378,18 +424,22 @@ footer h5{
 }
 @media screen and (max-width: 800px){
   header{
+    float: none;
     width: 100%;
+    font-size: 18px;
+    padding: 0 5px 0 5px;
   }
   html,body,.section1,.section2,.footer{
     width: 100%;
+    font-size: 16px;
   }
   .section1{
     margin: 110% 0 0 0;
     padding: 0 0 0 0 ;
   }
-  .card{
+  .container{
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
   }
   img{
     max-width: 100%;
@@ -406,18 +456,137 @@ footer h5{
   cursor: pointer;
   text-shadow: 5px 7px 15px rgba(0, 0, 0, 0.75);
 }
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
+ 
+  .circle1 {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  justify-content: flex-end;
+  margin: 40% 40% 0% 50%;
+  border: none;
+  border-radius: 50%;
+  float: right;
+  box-shadow: 5px 7px 15px 5px rgba(90, 92, 92, 0.75);
+}
+ .circle3 {
+  height: 30px;
+  width: 30px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  justify-content: flex-end;
+  margin: 10% 40% 10% 0%;
+  border: none;
+  border-radius: 50%;
+  float: right;
+  box-shadow: 5px 7px 15px 5px rgba(90, 92, 92, 0.75);
+}
+.square1 {
+  height: 90px;
+  width: 90px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  margin: 30% 20% 0% 20%;
+  top: 0;
+  border: none;
+  justify-content: flex-end;
+  box-shadow: 5px 5px 15px 3px rgba(134, 156, 156, 0.75);
+  
+}
+.circle2 {
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  justify-content: flex-start;
+  margin: 0% 50% 3% 10%;
+  border: none;
+  border-radius: 50%;
+  float: left;
+  box-shadow: 5px 7px 15px 5px rgba(90, 92, 92, 0.75);
+}
 
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
-  }
+.square2 {
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  margin: 3% 50% 0% 40%;
+  
+  top: -5%;
+  border: none;
+  justify-content: flex-end;
+  box-shadow: 5px 5px 15px 3px rgba(134, 156, 156, 0.75);
+}
+.square3 {
+  height: 50px;
+  width: 50px;
+  background: linear-gradient(45deg, rgb(187, 139, 155) 0%, hsla(340, 100%, 55%, 0) 70%),
+        linear-gradient(135deg, rgb(140, 162, 230) 10%, hsla(225, 95%, 50%, 0) 80%),
+        linear-gradient(225deg, rgb(119, 170, 136) 10%, hsla(140, 90%, 50%, 0) 80%),
+        linear-gradient(315deg, rgb(201, 167, 120) 100%, hsla(35, 95%, 55%, 0) 70%);
+  margin: 3% 40% 0% 60%;
+  
+  top: -5%;
+  border: none;
+  justify-content: flex-end;
+  box-shadow: 5px 5px 15px 3px rgba(134, 156, 156, 0.75);
+}
 
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-  } 
 
+.circle2:hover,.square2:hover{
+  transform: translateY(5px);
+  transition: all .5s ease;
+}
+.circle1:hover,.square1:hover{
+  transform: translateY(4px);
+  transition: all .5s ease;
+}
+.circle3:hover,.square3:hover{
+  transform: translateY(6px);
+  transition: all .5s ease;
+}
+.title{
+  color: white;
+}
+.subscribe{
+  padding: 10% 40% 10% 17%;
+  
+}
+.subscribe h5{
+  font-size: 22px;
+  color: #79585f;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+}
+.subscribe input{
+  border: none;
+  width: 45%;
+  height: 40px;
+ border-radius: 5px;
+ margin: 0 4% 0 0%;
+}
+.sub-btn{
+  margin: 5% 0%;
+  background: #e2ca89;
+  width: 25%;
+  color: rgb(73, 31, 31);
+  font-weight: 500;
+  padding: 10px 10px;
+  height: 10%;
+  border-radius: 5px 5px;
+  cursor: pointer;
+  box-shadow: 5px 3px 2px 0px rgba(0, 0, 0, 0.75);
+}
     </style>
 </head>
 
@@ -425,7 +594,7 @@ footer h5{
     <header class="header">
       <div class="header-icon">
         <a href="#" class="logo">
-          <span class="title"><i class="fa-solid fa-feather-pointed"></i>MyBlogs</span>
+          <span class="title">MyBlogs.</span>
         </a>
       </div>
         <nav class="header nav">
@@ -488,47 +657,51 @@ footer h5{
             </ul>    
         </nav>
         <button class="login-btn">Login/SignUp</button>
-        <!--Hamburger menu icon-->
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </div>
+       
       
     </header>
     
 
     <main id="top">
-      <img src="" alt="" class="main-img">
       <div class="main-content">
-        <h1 class="main-h1">A Foodie Traveller's Story.</h1>
+        <div class="main-info float-child">
+           <h1 class="main-h1">A Foodie Traveller's Story.</h1>
         <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>
         <button class="main-btn">Explore</button>
+        </div>
+       
+         <div class="shapes float-child">
+        <div class="circle1"></div>
+        <div class="square1"></div>
+        <div class="circle2"></div>
+        <div class="square2"></div>
+        <div class="circle3"></div>
+        <div class="square3"></div>
       </div>
-
+      </div>
+     
+       
+     
       <div class="section1">
         <h1>Our Blogs</h1>
-          <img src="https://unsplash.com/photos/O453M2Liufs" alt="scenery" class="align-right slide-in">
-                    <h3>Travel Blog</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo sint vel velit ut excepturi consectetur suscipit, earum modi accusamus voluptatem nostrum, praesentium numquam, reiciendis voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque.</p>
-          <img src="http://unsplash.it/400/401"   class="align-left slide-in">
-          
-          <h3>Food Blog</h3>
-          <p> at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas consequatur doloremque quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem. Tempora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus consequatur debitis nesciunt tempore officiis aperiam quisquam, molestiae voluptates cum, fuga culpa.</p> 
-          <img src="http://unsplash.it/200/500" alt="Delicious Food" class="align-right slide-in">
-         
-          <h3>Reading Blog</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet 
-          <img src="http://unsplash.it/200/200" alt="Book cover" class="align-left slide-in"> 
-          <img src="C:\\Users\\intel\\Desktop\\My Folders-2\\Bluetooth Folder\\Media Folders\\IMAGES\\Program Images\\12.jpg" class="align-left slide-in">
+        <h3>Travel Blog</h3>
+        <img src="http://unsplash.it/400/400" class="align-left slide-in">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est. Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo sint vel velit ut excepturi consectetur suscipit, earum modi accusamus voluptatem nostrum, praesentium numquam, reiciendis voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque optio maxime fugiat doloribus. Eum dolorum expedita quam, nesciunt</p>
+        <h3>Food Blog</h3>
+        <img src="http://unsplash.it/400/401" class="align-right slide-in">
+        <p> at provident praesentium atque quas rerum optio dignissimos repudiandae ullam illum quibusdam. Vel ad error quibusdam, illo ex totam placeat. Quos excepturi fuga, molestiae ea quisquam minus, ratione dicta consectetur officia omnis, doloribus voluptatibus? Veniam ipsum veritatis architecto, provident quas consequatur doloremque quam quidem earum expedita, ad delectus voluptatum, omnis praesentium nostrum qui aspernatur ea eaque adipisci et cumque ab? Ea voluptatum dolore itaque odio. Eius minima distinctio harum, officia ab nihil exercitationem. Tempora rem nemo nam temporibus molestias facilis minus ipsam quam doloribus consequatur debitis nesciunt tempore officiis aperiam quisquam, molestiae voluptates cum, fuga culpa. Distinctio accusamus quibusdam, tempore perspiciatis dolorum optio facere consequatur quidem ullam beatae architecto, ipsam sequi officiis dignissimos amet impedit natus necessitatibus tenetur repellendus dolor rem! Dicta dolorem, iure, facilis illo ex nihil ipsa amet officia, optio temporibus eum autem odit repellendus nisi. Possimus modi, corrupti error debitis doloribus dicta libero earum, sequi porro ut excepturi nostrum ea voluptatem nihil culpa? Ullam expedita eligendi obcaecati reiciendis velit provident omnis quas qui in corrupti est dolore facere ad hic, animi soluta assumenda consequuntur reprehenderit! Voluptate dolor nihil veniam laborum voluptas nisi pariatur sed optio accusantium quam consectetur, corrupti, sequi et consequuntur, excepturi doloremque. Tempore quis velit corporis neque fugit non sequi eaque rem hic. Facere, inventore, aspernatur. Accusantium modi atque, asperiores qui nobis soluta cumque suscipit excepturi possimus doloremque odit saepe perferendis temporibus molestiae nostrum voluptatum quis id sint quidem nesciunt culpa. Rerum labore dolor beatae blanditiis praesentium explicabo velit optio esse aperiam similique, voluptatem cum, maiores ipsa tempore. Reiciendis sed culpa atque inventore, nam ullam enim expedita consectetur id velit iusto alias vitae explicabo nemo neque odio reprehenderit soluta sint eaque. Aperiam, qui ut tenetur, voluptate doloremque officiis dicta quaerat voluptatem rerum natus magni. Eum amet autem dolor ullam.</p>
+        <h3>Reading Blog</h3>
+        <img src="http://unsplash.it/200/500" class="align-left slide-in">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio maiores adipisci quibusdam repudiandae dolor vero placeat esse sit! Quibusdam saepe aperiam explicabo placeat optio, consequuntur nihil voluptatibus expedita quia vero perferendis, deserunt et incidunt eveniet <img src="http://unsplash.it/200/200" class="align-right slide-in"> temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiores laudantium, rerum ratione consequatur, culpa consectetur possimus atque ab tempore illum non dolor nesciunt. Neque, rerum. A vel non incidunt, quod doloremque dignissimos necessitatibus aliquid laboriosam architecto at cupiditate commodi expedita in, quae blanditiis. Deserunt labore sequi, repellat laboriosam est, doloremque culpa reiciendis tempore excepturi. Enim nostrum fugit itaque vel corporis ullam sed tenetur ipsa qui rem quam error sint, libero. Laboriosam rem, ratione. Autem blanditiis</p>
 
-            temporibus doloremque possimus facilis. Possimus labore, officia dolore! Eaque ratione saepe, alias harum laboriosam deserunt laudantium blanditiis eum explicabo placeat reiciendis labore iste sint. Consectetur expedita dignissimos, non quos distinctio, eos rerum facilis eligendi. Asperiore.</p>
-        </div>
+        <p>laborum neque repudiandae quam, cumque, voluptate veritatis itaque, placeat veniam ad nisi. Expedita, laborum reprehenderit ratione soluta velit natus, odit mollitia. Corporis rerum minima fugiat in nostrum. Assumenda natus cupiditate hic quidem ex, quas, amet ipsum esse dolore facilis beatae maxime qui inventore, iste? Maiores dignissimos dolore culpa debitis voluptatem harum, excepturi enim reiciendis, tempora ab ipsam illum aspernatur quasi qui porro saepe iure sunt eligendi tenetur quaerat ducimus quas sequi omnis aperiam suscipit! Molestiae obcaecati officiis quo, ratione eveniet, provident pariatur. Veniam quasi expedita distinctio, itaque molestiae sequi, dolorum nisi repellendus quia facilis iusto dignissimos nam? Tenetur fugit quos autem nihil, perspiciatis expedita enim tempore, alias ab maiores quis necessitatibus distinctio molestias eum, quidem. Delectus impedit quidem laborum, fugit vel neque quo, ipsam, quasi aspernatur quas odio nihil? Veniam amet reiciendis blanditiis quis reprehenderit repudiandae neque, ab ducimus, odit excepturi voluptate saepe ipsam. Voluptatem eum error voluptas porro officiis, amet! Molestias, fugit, ut! Tempore non magnam, amet, facere ducimus accusantium eos veritatis neque.</p>
+    
+      </div>
       <div class="section2">
         <h1>Blog Posts</h1>
         <div class="container">
           <div class="card">
-            <img src="https://unsplash.com/photos/rmGVr0qhonA" alt="County Kerry, Ireland">
+            <img src="http://unsplash.it/400/401" alt="County Kerry, Ireland">
             <div class="card__data">
               <span class="tag">Travel</span>
               <span class="tag">Ireland</span>
@@ -540,7 +713,7 @@ footer h5{
             </div>
           </div>
             <div class="card">
-              <img src="http://unsplash.it/400/400" alt="Pozole Mexican traitional dish">
+              <img src="http://unsplash.it/200/200 " alt="Pozole Mexican traitional dish">
               <div class="card__data">
                 <span class="tag">Food</span>
                 <span class="tag">Mexican</span>
@@ -551,7 +724,7 @@ footer h5{
               </div>
             </div>
               <div class="card">
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Frupapublications.co.in%2Fbooks%2Fdon-quixote%2F&psig=AOvVaw3utREMoR0K4XTt0Aukb-k1&ust=1687110572746000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCPi20PDuyv8CFQAAAAAdAAAAABAD" alt="Don Quixote - a spanish novel by Miguel de Cervantes">
+                <img src="http://unsplash.it/400/400" alt="Don Quixote - a spanish novel by Miguel de Cervantes">
                 <div class="card__data">
                   <span class="tag">Novel</span>
                   <span class="tag">Spanish</span>
@@ -562,6 +735,11 @@ footer h5{
                 </div>
               </div>
           </div>
+      </div>
+      <div class="subscribe">
+        <h5>Subscribe to our newsletter</h5>
+        <input type="email" placeholder="youremail@gmail.com">
+        <button class="sub-btn">Subscribe</button>
       </div>
     </main>
     <footer>
@@ -579,7 +757,7 @@ footer h5{
       
      
     </footer>
-    <script	src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script> 
+    
     <script>
     
       window.onscroll=function(){ scrollFunction()};
@@ -587,7 +765,7 @@ footer h5{
       
       function scrollFunction(){
         if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
-          document.querySelector('.header').style.background="#501e27";
+          document.querySelector('.header').style.background="#724b52";
           
         }else{
           document.querySelector('.header').style.background="none";
@@ -595,8 +773,6 @@ footer h5{
         }
       }
      
-      const bounce = document.querySelector('.section1');
-        $bounce.velocity('scroll', 1000);
 
         function debounce(func, wait = 20, immediate = true) {
             var timeout;
@@ -617,9 +793,9 @@ footer h5{
 
         function checkSlide() {
             sliderImages.forEach(sliderImage => {
-                // Half way through the image
+                
                 const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-                // Bottom of the image
+                
                 const imageBottom = sliderImage.offsetTop + sliderImage.height;
                 const isHalfShown = slideInAt > sliderImage.offsetTop;
                 const isNotScrolledPast = window.scrollY < imageBottom;
